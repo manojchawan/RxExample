@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchPosts() {
-//        mviewModel = ViewModelProviders.of(this).get(PostViewModel::class.java)
+        mviewModel = ViewModelProviders.of(this@MainActivity).get(PostViewModel::class.java)
 
         val disp = mviewModel.showPosts().subscribe {
             displayPosts(it)

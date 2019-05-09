@@ -5,10 +5,9 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-    public static final String URL_BASE = "https://jsonplaceholder.typicode.com/";
+    private static final String URL_BASE = "https://jsonplaceholder.typicode.com/";
 
     private static Retrofit retrofit;
-
 
     public static Retrofit getClient() {
         if (retrofit == null) {

@@ -1,13 +1,14 @@
 package com.manchaw.rxexample
 
 import android.util.Log
+import androidx.lifecycle.ViewModel
 import com.jakewharton.rxrelay2.BehaviorRelay
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
-class PostViewModel {
+class PostViewModel: ViewModel() {
     final public val TAG = PostViewModel::class.java.simpleName
 
     data class MyViewState(val list: List<PostResponse>)
